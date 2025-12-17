@@ -4,6 +4,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "@/lib/firebase";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { signInWithGoogle } from "@/lib/auth";
 
 export default function LoginPage() {
     const [email, setEmail] = useState("");
@@ -35,6 +36,9 @@ export default function LoginPage() {
             />
 
             <button onClick={handleLogin}>Login</button>
+            <button onClick={signInWithGoogle}>
+                Sign in with Google
+            </button>
         </div>
     );
 }
