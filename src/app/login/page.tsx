@@ -37,7 +37,7 @@ export default function LoginPage() {
 
             <button onClick={handleLogin}>Login</button>
             <button onClick={signInWithGoogle}>
-                Sign in with Google
+                Sign in with Googlee
             </button>
         </div>
     );
